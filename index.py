@@ -19,6 +19,7 @@ keepProps = {
     "minecraft:azalea_leaves"
 }
 
+# Replace shcematic with yours.
 schem = Schematic.load("./schematics/test.litematic")
 
 blockCounter = Counter()
@@ -35,7 +36,6 @@ for region in schem.regions.values():
             key = key[len("minecraft:"):]
 
         displayName = customNames.get(key, key)
-
         blockCounter[displayName] += 1
 
 # Vanilla blocks that are two high, they need to be divided by two, otherwise it returns wrong count.
@@ -59,7 +59,6 @@ for key in list(blockCounter.keys()):
     baseName = key.split("[")[0]
     if baseName in doubleBlocks:
         blockCounter[key] = blockCounter[key] // 2
-
 
 sortedData = dict(sorted(blockCounter.items(), key=lambda item: item[1], reverse=True))
 
