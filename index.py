@@ -39,7 +39,7 @@ ignoreKeys = {
 }
 
 # Replace shcematic with yours.
-schem = Schematic.load("./schematics/test.litematic")
+schem = Schematic.load("./schematics/schem.litematic")
 
 blockCounter = Counter()
 
