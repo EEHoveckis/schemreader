@@ -1,13 +1,3 @@
-# schemreader
-Reads .litematica file and lists materials needed with support for custom blocks.
-Made for Minecraft Java server Origin Realms. Use for whatever you need it.
-
-Requires Python library `litemapy`.
-
-
-
-Provided as-is, without waranties.
-
 <h1 align="center">🧱 schemreader</h1>
 <p align="center">Custom Block Reader from .litematica</p>
 
@@ -37,3 +27,6 @@ The blocks needed with amounts will be outputed to `blockCounts.json`
   * Ruby Deposit / Decorated Pot cannot be counted.
   * Channeling Rod uses chain model, impossible to count.
   * Display Plaque cannot be counted.
+
+
+_Provided as-is, without waranties._
