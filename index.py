@@ -37,8 +37,16 @@ for region in schem.regions.values():
         if key in ignoreKeys:
             continue
 
-        displayName = customNames.get(key, key)
-        blockCounter[displayName] += 1
+        if key in customNames:
+            mapping = customNames[key]
+            if isinstance(mapping, list):   # ["pebble", 2]
+                displayName, amount = mapping[0], mapping[1]
+            else:                           # "pebble"
+                displayName, amount = mapping, 1
+        else:
+            displayName, amount = key, 1  # fallback if unmapped
+
+        blockCounter[displayName] += amount
 
 for key in list(blockCounter.keys()):
     baseName = key.split("[")[0]
