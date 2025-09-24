@@ -794,5 +794,11 @@
 	"creeper_wall_head": "creeper_head",
 	"piglin_wall_head": "piglin_head",
 	"skeleton_wall_skull": "skeleton_skull",
-	"wither_skeleton_wall_skull": "wither_skeleton_skull"
+	"wither_skeleton_wall_skull": "wither_skeleton_skull",
+
+	"note_block[instrument=iron_xylophone,note=23,powered=true]": "lapis_lazuli_bricks",
+	"note_block[instrument=iron_xylophone,note=24,powered=true]": "lapis_lazuli_pillar",
+	"note_block[instrument=pling,note=0,powered=true]": "lapis_lazuli_pillar",
+	"note_block[instrument=pling,note=1,powered=true]": "lapis_lazuli_pillar",
+	"note_block[instrument=banjo,note=24,powered=false]": "salvaging_table"
 }
